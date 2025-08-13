@@ -1,0 +1,16 @@
+{
+  "name": "proyecto-caro",
+  "version": "1.0.0",
+  "description": "Sitio web dedicado a fans de Star Wars. Este proyecto presenta una estructura avanzada en HTML, CSS y el uso parcial de Bootstrap.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/main.scss css/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.90.0"
+  }
+}

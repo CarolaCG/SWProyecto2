@@ -1,0 +1,14 @@
+@use 'abstracts'  as *;
+@use 'base'       as *;
+@use 'layout'     as *;
+@use 'components' as *;
+@use 'pages'      as *;
+@use 'utilities'  as *;
+
+html { scroll-behavior: smooth; }
+body {
+  background-color: $color-bg;
+  color: $color-text;
+  font-family: $font-body;
+  line-height: 1.6;
+}

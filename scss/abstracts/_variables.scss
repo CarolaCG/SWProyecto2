@@ -1,0 +1,31 @@
+$color-primary:   #ffe81f;
+$color-primary-d: #d4b400;
+$color-bg:        #000000;
+$color-text:      #f1f1f1;
+$color-dark:      #111;
+$shadow-primary:  0 0 14px rgba(255, 232, 31, .45);
+
+/* Tipografía y radius */
+$font-body: Arial, sans-serif;
+$radius:    12px;
+
+/* Breakpoints en mapa */
+$bps: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px
+);
+
+
+$palette: (
+  primary: $color-primary,
+  dark:    $color-dark,
+  bg:      $color-bg
+);
+
+$color-principal: $color-primary;  
+$color-texto:     $color-text;     
+$color-fondo:     $color-bg;       
+
+
+$break-md: 768px;

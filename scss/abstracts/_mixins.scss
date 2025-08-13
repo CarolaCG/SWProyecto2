@@ -1,0 +1,29 @@
+@use 'sass:map';
+@use 'variables' as v;
+
+/* Media query helper */
+@mixin mq($key) {
+  @media (max-width: map.get(v.$bps, $key)) { @content; }
+}
+
+/* Hover suave / brillo */
+@mixin hover-bright {
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+  &:hover { transform: scale(1.03); box-shadow: v.$shadow-primary; }
+}
+
+/* Grid fluido */
+@mixin auto-grid($min: 220px, $gap: 1.25rem) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
+  gap: $gap;
+}
+
+/* Aspect-ratio helper */
+@mixin ratio($w:16, $h:9) {
+  aspect-ratio: #{$w} / #{$h};
+}
+@mixin card-hover {
+  transition: transform .15s ease, box-shadow .15s ease;
+  &:hover { transform: scale(1.03); box-shadow: 0 0 14px rgba(255,232,31,.45); }
+}

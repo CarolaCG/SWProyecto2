@@ -1,0 +1,6 @@
+@use 'sass:color';
+
+
+@function tone($c, $lightness) {
+  @return color.adjust($c, $lightness: $lightness);
+}

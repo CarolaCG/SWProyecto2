@@ -1,0 +1,25 @@
+@use '../abstracts' as a;
+
+/* Galería general */
+.galeria-imagenes {
+  @include a.auto-grid(260px);
+  padding: 2rem 0;
+}
+
+.galeria-imagenes .tile {
+  position: relative; overflow: hidden; border-radius: 12px; background: #000;
+  @include a.ratio(16,9);
+  box-shadow: 0 0 10px rgba(255,232,31,.2);
+  @include a.hover-bright;
+}
+.galeria-imagenes .tile img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Cosplay  */
+.galeria-cosplay { @include a.auto-grid(320px, 2rem); justify-items: center; }
+.galeria-cosplay img {
+  width: 100%; max-height: 500px; object-fit: contain; background: #000; padding: 10px; border-radius: 10px;
+  @include a.hover-bright;
+}
+
+/* Personajes */
+.galeria-personajes { @include a.auto-grid(220px, 1.5rem); padding: 2rem 0; }

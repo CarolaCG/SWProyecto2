@@ -1,0 +1,4 @@
+@use '../abstracts' as a;
+
+h1, h2, h3 { color: a.$color-primary; margin-bottom: 1rem; }
+p, li { font-size: 1.1rem; }
